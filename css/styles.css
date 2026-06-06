@@ -1,22 +1,51 @@
+/* ===== Global body styles ===== */
+body {
+  background-color: #96B6D6;
+  font-family: Calibri, sans-serif;
+  margin: 40px;
+}
 
-    body{
-        background-color: #96B6D6;
-        font-family: Calibri, sans-serif;
-        margin: 40px;
-    }
+/* ===== Headings ===== */
+h1 { color: #121412; text-align: left; }
 
-    h1{
-        color: #121412 ;
-        text-align: left;
-    }
-    h2{
-        color: #2E74B5;
-        border-bottom: 2px solid #2e74B5;
-    }
-    p{
-        color: #333333;
-        font-size: 16px;
-        line-height: 1.6;
+h2 {
+  color: #2E74B5;
+  border-bottom: 2px solid #2E74B5;
+}
 
-    }
+/* ===== Paragraphs ===== */
+p { color: #333333; font-size: 16px; line-height: 1.6; }
 
+/* ===== Navigation ===== */
+nav {
+  background-color: #1F3864;
+  padding: 10px 20px;
+  margin: -40px -40px 20px -40px;
+}
+nav a { color: white; text-decoration: none; margin-right: 20px; font-size: 16px; }
+nav a:hover { color: #96B6D6; }
+
+/* ===== Lists ===== */
+ul, ol { color: #333333; font-size: 16px; line-height: 1.8; }
+
+/* ===== Description list ===== */
+dl { margin-left: 0; font-size: 16px; }
+dt { font-weight: bold; color: #1F3864; margin-top: 10px; }
+dd { margin-left: 20px; color: #333333; }
+
+/* ===== Table (Lab 3) ===== */
+table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+th, td { border: 1px solid #cccccc; padding: 10px; text-align: left; }
+th { background-color: #1F3864; color: white; }
+tr:nth-child(even) { background-color: #f2f2f2; }
+
+/* ===== Video & iframe (Lab 3) ===== */
+video { max-width: 100%; height: auto; }
+iframe { max-width: 100%; }
+
+/* ===== Images ===== */
+img { border-radius: 8px; display: block; margin-bottom: 10px; }
+
+/* ===== Links ===== */
+a { color: #1F3864; }
+a:hover { color: #2E74B5; }
