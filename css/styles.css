@@ -1,29 +1,67 @@
-/* ===== Global body styles ===== */
+/* ===== Reset ===== */
 body {
-  background-color: #96B6D6;
-  font-family: Calibri, sans-serif;
-  margin: 40px;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* ===== Headings ===== */
-h1 { color: #121412; text-align: left; }
-
-h2 {
-  color: #2E74B5;
-  border-bottom: 2px solid #2E74B5;
+/* ===== Header ===== */
+header {
+  background-color: #1F3864;
+  color: white;
+  padding: 30px 40px;
 }
-
-/* ===== Paragraphs ===== */
-p { color: #333333; font-size: 16px; line-height: 1.6; }
+header h1 { color: white; }
+header p  { color: #96B6D6; margin: 0; }
 
 /* ===== Navigation ===== */
 nav {
   background-color: #1F3864;
   padding: 10px 20px;
-  margin: -40px -40px 20px -40px;
+  margin: 0;
 }
 nav a { color: white; text-decoration: none; margin-right: 20px; font-size: 16px; }
 nav a:hover { color: #96B6D6; }
+
+/* ===== Main content ===== */
+main {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+/* ===== Headings ===== */
+h1 { color: #121412; text-align: left; }
+h2 { color: #2E74B5; border-bottom: 2px solid #2E74B5; }
+
+/* ===== Paragraphs ===== */
+p { color: #333333; font-size: 16px; line-height: 1.6; }
+
+/* ===== Sections ===== */
+#intro {
+  background-color: #1F3864;
+  padding: 30px 40px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+#intro h2 { color: white; border-bottom: 2px solid rgba(255,255,255,0.3); }
+#intro p  { color: white; }
+
+#why-computing {
+  background-color: white;
+  padding: 30px 40px;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+#skills {
+  padding: 30px 40px;
+  max-width: 800px;
+  margin: 20px auto;
+}
 
 /* ===== Lists ===== */
 ul, ol { color: #333333; font-size: 16px; line-height: 1.8; }
@@ -33,19 +71,70 @@ dl { margin-left: 0; font-size: 16px; }
 dt { font-weight: bold; color: #1F3864; margin-top: 10px; }
 dd { margin-left: 20px; color: #333333; }
 
-/* ===== Table (Lab 3) ===== */
+/* ===== Table ===== */
 table { border-collapse: collapse; width: 100%; margin: 20px 0; }
 th, td { border: 1px solid #cccccc; padding: 10px; text-align: left; }
 th { background-color: #1F3864; color: white; }
 tr:nth-child(even) { background-color: #f2f2f2; }
 
-/* ===== Video & iframe (Lab 3) ===== */
+/* ===== Images ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* ===== Video & iframe ===== */
 video { max-width: 100%; height: auto; }
 iframe { max-width: 100%; }
 
-/* ===== Images ===== */
-img { border-radius: 8px; display: block; margin-bottom: 10px; }
+/* ===== Cards ===== */
+.card, article.card {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #DDDDDD;
+  padding: 20px;
+  margin: 10px 0;
+}
+.card img { width: 100%; height: 220px; object-fit: cover; }
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 20px;
+}
 
+.featured {
+  background-color: #1F3864;
+  color: white;
+  font-weight: bold;
+  border-color: #1F3864;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #1F3864;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+footer p {
+  color: white;
+}
 /* ===== Links ===== */
 a { color: #1F3864; }
 a:hover { color: #2E74B5; }
+
+/* ==== Profile Photo ==== */
+.profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;       
+  object-fit: cover;        
+  object-position: center center;  
+  border: 3px solid #1F3864;
+  margin: 20px 0 10px 0;
+}

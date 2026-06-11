@@ -8,47 +8,60 @@
 </head>
 <body>
 
+  <!-- Header -->
+  <header>
+    <h1>Michal Szaroma</h1>
+    <p>Computing Student</p>
+  </header>
+
   <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
+    <a href="#skills">Skills</a>
     <a href="contact.html">Contact &amp; Links</a>
   </nav>
+
+  <main>
 
   <hr>
 
   <!-- Profile photo -->
-  <img src="images/profile.jpg" alt="Photo of Michal Szaroma" width="100">
+  <img src="images/profile.jpg" alt="Photo of Michal Szaroma" class="profile-photo">
 
   <!-- Main heading -->
-  <h1 style="color: #1F3864; text-align: left;">Michal Szaroma</h1>
+ 
   <p><strong>Course:</strong> <u>BSc (Hons) Computing at NCI</u></p>
 
   <!-- Welcome section -->
+  <section id="intro">
   <h2>Welcome!</h2>
   <p>Hi! My name is <strong>Michal Szaroma</strong>. I am a <em> computing student</em> based in Dublin.<br>
   I like technology and building things with code. Feel free to explore my site!</p>
+  </section>
+
 
   <hr>
 
   <!-- Why I chose Computing -->
+  <section id="why-computing">
   <h2>Why Computing?</h2>
   <p style="background-color: #B8D0E8; padding: 8px; border-left: 4px solid #1F3864;">
   I chose Computing because I've always been drawn to solving problems and understanding how things work behind the scenes.<br>
   Working in logistics showed me how much technology can improve everyday work, and it made me want to learn the skills needed to build those systems myself.<br>
   For me, Computing is <del>just a career change</del> <ins> so much more than that</ins>, it's about challenging myself and opening the door to a better future.</p>
-
+</section>
   <hr>
 
   <!-- Favourite Things section -->
   <h2>My Favourite Things</h2>
-  <ul>
-    <li>Travel</li>
-    <li>Hiking</li>
-    <li>Gaming</li>
-    <li>Sports</li>
-    <li>Technology</li>
-  </ul>
+
+  <article class="card">Travel</article>
+  <article class="card">Hiking</article>
+  <article class="card">Gaming</article>
+  <article class="card">Sports</article>
+  <article class="card">Technology</article>
+
 
   <!-- How I set up my page section -->
   <h2>How I Set Up My Web Page</h2>
@@ -61,6 +74,7 @@
   </ol>
 
   <!-- Table -->
+  <section id="skills">
   <h2>Web Technologies Overview</h2>
   <table>
     <thead>
@@ -88,7 +102,7 @@
       </tr>
     </tbody>
   </table>
-
+</section>
 
 
 
@@ -106,11 +120,11 @@
 
   <p><mark>Water is H<sub>2</sub>O. Einstein wrote E=mc<sup>2</sup>.</mark></p>
 
-  <hr>
+  
 
   
 
-  <hr>
+  
 
   <!-- MP4 Video -->
   <h2>Video</h2>
@@ -128,7 +142,12 @@
 
   <!-- Embedded YouTube video -->
   <h2>Web Development Introduction</h2>
-  <<iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=j1bSzcTLP4seE8n9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU?si=j1bSzcTLP4seE8n9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</main>
+
+<footer>
+  <p>&copy; 2026 Michal Szaroma</p>
+</footer>
 
 </body>
 </html>
